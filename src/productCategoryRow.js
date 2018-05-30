@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterableProductTable = ({ category }) => (
+const ProductCategoryRow = ({ category }) => (
   <tr>
     <th colSpan="2">
       {category}
@@ -8,4 +8,4 @@ const FilterableProductTable = ({ category }) => (
   </tr>
 );
 
-export default FilterableProductTable;
+export default ProductCategoryRow;

@@ -1,14 +1,21 @@
 import React from 'react';
 
-const FilterableProductTable = ({ products }) => (
+const SearchBar = ({ products, filterText, inStockOnly }) => (
   <form>
-    <input type="text" placeholder="Search..." />
+    <input
+      type="text"
+      placeholder="Search..."
+      value={filterText}
+    />
     <p>
-      <input type="checkbox" />
+      <input
+        type="checkbox"
+        checked={inStockOnly}
+      />
       {' '}
       Only show products in stock
     </p>
   </form>
 );
 
-export default FilterableProductTable;
+export default SearchBar;
